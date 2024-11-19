@@ -178,7 +178,6 @@ ul {
   position: absolute;
   top: 50px;
   font-size: 30px;
-  text-transform: capitalize;
 }
 
 .aside .logo a {
@@ -628,6 +627,7 @@ h3.my-profession {
 
 .certificates .timeline .timeline-date .fa {
   margin-right: 5px;
+  background-color: var(--skin-color);
 }
 
 .certificates .timeline .timeline-title {
@@ -635,7 +635,7 @@ h3.my-profession {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
-  color: var(--text-black-900);
+  color: var(--skin-color);
 }
 
 .certificates .timeline .timeline-text {
