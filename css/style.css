@@ -6,14 +6,16 @@
   --bg-black-50: #393939;
   --text-black-900: #ffffff;
   --text-black-700: #e9e9e9;
+  --aside-bg: rgb(34, 34, 34, 0.5);
 }
 
 body.light {
   --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
+  --bg-black-100: rgb(253, 249, 255);
   --bg-black-50: #e8dfec;
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
+  --aside-bg: rgb(253, 249, 255, 0.8);
 }
 
 body {
@@ -33,10 +35,6 @@ body {
 ::before,
 ::after {
   box-sizing: border-box;
-}
-
-ul {
-  list-style: none;
 }
 
 .section {
@@ -160,7 +158,7 @@ ul {
 
 .aside {
   width: 270px;
-  background: var(--bg-black-100);
+  background: linear-gradient(var(--aside-bg), var(--aside-bg)), url(../images/sidebar.jpg);
   position: fixed;
   left: 0;
   top: 0;
@@ -554,11 +552,27 @@ h3.my-profession {
 }
 
 .about .about-content .timeline .timeline-title {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: capitalize;
   color: var(--text-black-900);
+}
+
+.about .about-content .timeline .timeline-title-school {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--skin-color);
+}
+
+.about .about-content .timeline .timeline-title-work {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--skin-color);
 }
 
 .about .about-content .timeline .timeline-text {
@@ -566,6 +580,21 @@ h3.my-profession {
   font-size: 16px;
   text-align: justify;
   color: var(--text-black-700);
+}
+
+.about .about-content .timeline .timeline-item .tasks li{
+  color: var(--text-black-900);
+  padding-left: 10px;
+}
+
+.about .about-content .timeline .timeline-item .tasks{
+  color: var(--text-black-900);
+  padding-left: 30px;
+}
+
+.about .about-content .timeline .timeline-item .tasks .sub{
+  color: var(--text-black-900);
+  padding-left: 30px;
 }
 
 .certificates {
